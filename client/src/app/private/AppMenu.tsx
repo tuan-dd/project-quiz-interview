@@ -71,7 +71,7 @@ function AppMenu() {
 
   const handleChooseAction = useCallback(
     (key: string) => {
-      if (key === 'Sign-out') {
+      if (key === 'sign-out') {
         confirm({
           content: 'Sign out',
           onOk() {
