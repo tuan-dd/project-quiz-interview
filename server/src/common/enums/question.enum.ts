@@ -1,0 +1,6 @@
+export enum QuestionType {
+  MULTIPLE_CHOICE = 'MULTIPLE_CHOICE',
+  CHOICE = 'CHOICE',
+  YES_NO = 'YES_NO',
+  INPUT_TEXT = 'INPUT_TEXT',
+}

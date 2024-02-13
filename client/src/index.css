@@ -1,0 +1,55 @@
+@import 'assets/styles/font-face.css';
+@import 'assets/styles/custome-class.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scrollbar-gutter: auto;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    font-size: 16px;
+    line-height: 1.25rem;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: #c1c1c1 #eeeeee;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  .dark {
+    scrollbar-color: #acbbc7 #25384a !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-light-scrollbarTrack dark:bg-dark-scrollbarTrack rounded-[7px];
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-light-scrollbarThumb dark:bg-dark-scrollbarThumb rounded-[7px];
+  }
+
+  body {
+    line-height: unset;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Heebo', 'PlayfairDisplay', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+}
